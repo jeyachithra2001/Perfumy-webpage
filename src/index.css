@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.body{
+    background-color: rgb(245, 245, 253);
+}
+p{    
+    line-height: 1.4;
+}
+
+/* NAVBAR */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(3, 3, 80);
+    color: white;
+    padding: 20px;
+}
+.nav__list{
+    display: flex;
+    gap: 10px;
+    list-style:none;
+}
+.nav__list a{
+    text-decoration: none;
+    color: rgb(180, 177, 177);
+    transition: all 0.5s;
+    display: inline-block;
+}
+.nav__list a:hover{
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: rgba(9, 9, 9, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* SEARCHBAR */
+.search{
+    padding: 40px;
+    text-align: center;
+}
+.search input{
+    width: 80%;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.search input:focus{
+    border: none;
+    border: 2px solid rgb(3, 3, 80);;
+} 
+
+
+/* CARD SECTION */
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card__item{
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card__item img{
+    width: 100%;
+    margin-bottom: 10px;
+    transition: all 1s;
+    border-radius: 10px;
+    height: 250px;
+}
+.card__item:hover img{
+    transform: translateY(-3px);
+    box-shadow: rgba(9, 9, 9, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* ABOUT SECTION */
+.about{
+    text-align: center;
+    margin: 40px;
+}
+.about p{
+    margin-top: 10px;
+}
+
+/* FOOTER */
+.footer{
+    background-color: rgb(3, 3, 80);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+.footer p{
+    margin-top: 10px;
+}
+.footer a{
+    color: goldenrod;
+}
+.footer .para{
+    margin-top: 30px;
+}
